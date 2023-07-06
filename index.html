@@ -1,806 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Page Title -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spicer Global Service - Empowering Business Growth</title>
 
-    <!-- Meta Data -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/img/DroneIcon.png" />
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!-- Web Fonts -->
+    <!-- 
+    - google font link
+  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- ======= FontAwesome ======= -->
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-
-    <!-- ======= Bootstrap ======= -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
-    <!-- ======= Swiper Bundle ======= -->
-    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
-
-    <!-- ======= Magnific Popup ======= -->
-    <link
-      rel="stylesheet"
-      href="assets/plugins/magnific-popup/magnific-popup.css"
-    />
-
-    <!-- ======= Main Stylesheet ======= -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- ======= Custom Stylesheet ======= -->
-    <link rel="stylesheet" href="assets/css/custom.css" />
   </head>
 
-  <body data-bg-img="assets/img/bg/page-bg.png">
-    <!-- Preloader -->
-    <!-- <div class="preloader">
-      <div class="preloader-inner">
-        <img src="assets/img/DroneText.svg" alt="" class="svg preloader-svg" />
-      </div>
-    </div> -->
-    <!-- End Preloader -->
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
 
-    <!-- Header -->
-    <header class="header">
-      <!-- Header Main -->
-      <div class="header-main love-sticky fixed-top">
-        <div class="container">
-          <div class="header-inner position-relative">
-            <div class="row align-items-center">
-              <div class="col-lg-4 col-md-6 col-sm-9 col-6">
-                <div class="d-flex align-items-center">
-                  <!-- Start Logo -->
-                  <div class="logo">
-                    <a href="#">
-                      <img
-                        src="assets/img/DroneLogo-White.png"
-                        class="main-logo"
-                        alt=""
-                      />
-                      <img
-                        src="assets/img/DroneLogo.png"
-                        class="sticky-logo"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-                  <!-- End of Logo -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">SPICER</a>
 
-                
-                </div>
-              </div>
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
 
-              <div
-                class="col-lg-8 col-md-6 col-sm-3 col-6 d-flex align-items-center justify-content-end position-static"
+            <li>
+              <a href="#service" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link
+                >Contact Us</a
               >
-                <div class="nav-wrapper d-flex align-items-center">
-                  <div class="nav-wrap-inner">
-                    <!-- Nav -->
-                    <ul class="nav">
-                      <!-- <li class="current-menu-parent">
-                        <a href="">Home</a>
-                      </li> -->
-                      <li>
-                        <a href="#about">About us</a>
-                      </li>
-                      <li>
-                        <a href="#services">Services</a>
-                      </li>
-                      <li>
-                        <a href="#contact">Contacts</a>
-                      </li>
-                 
-                    </ul>
-                    <!-- End Nav -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle menu"
+          data-nav-toggler
+        >
+          <ion-icon name="menu-outline" class="open"></ion-icon>
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
       </div>
-      <!-- End Header Main -->
     </header>
-    <!-- End Header -->
 
-    <!-- Banner -->
-    <div class="banner ov-hidden">
-      <div id="particles" data-bg-img="assets/img/bg/banner-bg.png"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <!-- Banner Content -->
-            <div class="banner-content text-white mt-xl-5 pt-xl-2 mb-5 mb-lg-0">
-              <h1>Your Experts in <span>Drone Photography</span></h1>
-              <ul class="list-info text-white">
-                <li>
-                
-                  <h6>
-                    We provide top-notch marketing,
-                    <span class="c1"
-                      >web/mobile development, <br />lead generation, and sales
-                      solutions</span
-                    >
-                    tailored to your <br />
-                    company.
-                  </h6>
-                </li>
-              
-              </ul>
-              <div class="button-group">
-                <a href="" class="btn">
-                  <img src="assets/img/icons/discover.svg" alt="" class="svg" />
-                  Get Started
-                </a>
-            
-              </div>
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">Spicer Global Service</p>
+
+              <h1 class="h1 hero-title">Empowering Business Growth</h1>
+
+              <p class="hero-text">
+                We provide top-notch Marketing, Web/Mobile Developement, Lead
+                Generation, and Sales Solutions tailored to your Company
+              </p>
+
+              <a href="#" class="btn btn-primary">Get Started</a>
             </div>
-            <!-- End Banner Content -->
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/Digital-Home .png"
+                width="720"
+                height="673"
+                alt="hero banner"
+                class="w-100"
+              />
+            </figure>
           </div>
-          <div class="col-lg-6">
-            <!-- Banner IMG -->
-            <!-- <div class="banner-img mb-60 mb-lg-0">
-              <img src="" alt="" />
+        </section>
 
-              <div class="banner-img-content">
-                <h2>No - Text yet</h2> -->
+        <!-- 
+        - #SERVICE
+      -->
 
-                <!-- List Info -->
-                <!-- <ul class="list-info text-white style--two">
-                  <li>
-                    <h5>NO - TEXT</h5>
-                    <h4 class="mb-0">NO - TEXT</h4>
-                  </li>
-                  <li>
-                    <h5>NO - TEXT</h5>
-                    <div class="countdown-wrap">
-                      <ul class="countdown">
-                        <li>
-                          <span class="hours">NO - TEXT</span>
-                        </li>
-                        <li class="ms-1 me-1">NO - TEXT</li>
-                        <li>
-                          <span class="minutes">NO - TEXT</span>
-                        </li>
-                        <li class="ms-1 me-1">NO - TEXT</li>
-                        <li>
-                          <span class="seconds">NO - TEXT</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul> -->
-                <!-- End List Info -->
+        <section class="section service" id="service" aria-label="service">
+          <div class="container">
+            <h2 class="h2 section-title">Services We Provided</h2>
 
-                <!-- Button Group -->
-                <!-- <div class="button-group">
-                  <a href="#" class="btn-circle love-react mr-10"></a>
+            <p class="section-text">
+              At Spicer Global Solutions, we specialize in providing
+              comprehensive business process outsourcing solutions. With our
+              deep understanding of the industry and digital marketing
+              expertise, we help our clients achieve their business goals and
+              stand out in the competitive market.
+            </p>
 
-                  <div class="dropdown mr-10">
-                    <button
-                      class="btn-circle dropdown-toggle"
-                      data-bs-toggle="dropdown"
-                    >
-                      <img
-                        src="assets/img/icons/share.svg"
-                        alt=""
-                        class="svg"
-                      />
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="https://www.facebook.com/"
-                          ><img src="assets/img/icons/facebook.svg" alt="" />
-                          Share on Facebook</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="https://www.twitter.com/"
-                          ><img src="assets/img/icons/twitter.svg" alt="" />
-                          Share on Twitter</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="https://www.Instagram.com/"
-                          ><img src="assets/img/icons/instagram.svg" alt="" />
-                          Share on Instagram</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item"
-                          target="_blank"
-                          href="https://www.linkedin.com/"
-                          ><img src="assets/img/icons/linkedin.svg" alt="" />
-                          Share on Linkedin</a
-                        >
-                      </li>
-                    </ul>
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #13c4a1">
+                    <ion-icon name="chatbox"></ion-icon>
                   </div>
 
-                  <a href="" class="btn btn-sm">
-                    <img
-                      src="assets/img/icons/judge-icon.svg"
-                      alt=""
-                      class="svg"
-                    />
-                    Follow Us
-                  </a>
-                </div> -->
-                <!-- End Button Group -->
-              </div>
-            </div>
-            <!-- End Banner IMG -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Banner -->
+                  <h3 class="h3">
+                    <a href="#" class="card-title">SEO Optimization</a>
+                  </h3>
 
-    <!-- About -->
-    <section id="about" class="pt-120 pb-120">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <!-- Section Title -->
-            <div class="section-title text-white mb-4">
-              <h2>About Us</h2>
-            </div>
-            <!-- End Section Title -->
+                  <p class="card-text">
+                    Boost your company's online visibility with our SEO
+                    strategies tailored for the your industry.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #6610f2">
+                    <ion-icon name="briefcase"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Social Media Marketing</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Reach a wider audience and engage with potential customers
+                    through effective social media marketing campaigns.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #ffb700">
+                    <ion-icon name="bulb"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Ad Buys</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Maximize your ad spend and achieve optimal results by
+                    leveraging our expertise in targeted ad buying for your
+                    company.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #fc3549">
+                    <ion-icon name="desktop"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Web Development</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Get a stunning, responsive website that showcases your
+                    products and services and converts visitors into customers.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #00d280">
+                    <ion-icon name="phone-portrait"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mobile Development</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Reach your target audience on the go with our custom mobile
+                    app development solutions.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon" style="background-color: #ff612f">
+                    <ion-icon name="build"></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Lead Generations</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Attract high-quality leads for your business and convert
+                    them into paying customers with our lead generation
+                    strategies.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="col-lg-7">
-            <div class="content text-white mt-n1">
-              <p>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <div
+              class="about-banner img-holder"
+              style="--width: 720; --height: 960"
+            >
+              <img
+                src="./assets/images/Digital-Home -About (1).png"
+                width="720"
+                height="960"
+                loading="lazy"
+                alt="about banner"
+                class="img-cover"
+              />
+
+              <!-- <button class="play-btn" aria-label="Play video">
+                <ion-icon name="play" aria-hidden="true"></ion-icon>
+              </button> -->
+            </div>
+
+            <div class="about-content">
+              <h2 class="h2 section-title">About Us</h2>
+
+              <p class="section-text">
                 At Spicer Global Solutions, we specialize in providing
                 comprehensive business process outsourcing solutions exclusively
-                for your comapny. With our deep understanding of
-                the  industry and digital marketing expertise, we help our
-                clients achieve their business goals and stand out in the
-                competitive market.
+                for your comapny. With our deep understanding of the industry
+                and digital marketing expertise, we help our clients achieve
+                their business goals and stand out in the competitive market.
               </p>
-              <p>
+
+              <!-- <h3 class="h3">Who We Are</h3> -->
+
+              <p class="section-text">
                 Our team of seasoned professionals excels in search engine
                 optimization (SEO), social media marketing, ad buys, web and
                 mobile development, lead generation, and sales strategies
-                tailored specifically for your company. We are
-                dedicated to delivering exceptional results and driving growth
-                and value for our clients.
+                tailored specifically for your company. We are dedicated to
+                delivering exceptional results and driving growth and value for
+                our clients.
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5 pt-1">
-          <div class="col-12">
-            <!-- Swiper -->
-            <div
-              class="swiper walletCarousel"
-              data-swiper-loop="true"
-              data-swiper-items="auto"
-              data-swiper-margin="30"
-              data-swiper-autoplay="true"
-            >
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a class="wallet">
-                    <img src="assets/img/media/wallet1.png" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a class="wallet">
-                    <img src="assets/img/media/wallet2.png" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a class="wallet">
-                    <img src="assets/img/media/wallet3.png" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a class="wallet">
-                    <img src="assets/img/media/wallet4.png" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a class="wallet">
-                    <img src="assets/img/media/wallet5.png" alt="" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a class="wallet">
-                    <img src="assets/img/media/wallet6.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About -->
 
-    <!-- Video -->
-    <div class="vdo_sec">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <!-- Video Button Wrapper -->
-            <div class="vdo-btn-wrapper gradient-box">
-              <img
-                src="assets/img/icons/bg-play.png"
-                class="gradient-box-icon"
-                alt=""
-              />
-              <a href="" class="vdo_btn popup-video icon-mobile-white">
-                <img src="assets/img/icons/play.svg" alt="" class="svg" />
-                <h3 class="text-white">Learn How Busienss Process Outsorucing Adds Exponentional Value for Your Company!</h3>
-              </a>
-            </div>
-            <!-- End Video Button Wrapper -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Video -->
+              <!-- <h3 class="h3">Our Success</h3>
 
-    <!-- Explore Feeds -->
-    <section id="services" class="pt-120 pb-120 section-shape section-shape-right">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-7">
-            <!-- Section Title -->
-            <div class="section-title text-white text-center">
-              <h2>Our Services</h2>
-              <p>
-                At Spicer Global Solutions, we specialize in providing
-                comprehensive business process outsourcing solutions. 
-		With our deep understanding of
-                the industry and digital marketing expertise, we help our
-                clients achieve their business goals and stand out in the
-                competitive market.
-              </p>
-            </div>
-            <!-- End Section Title -->
-          </div>
-        </div>
-      </div>
+              <ul class="about-list">
+                <li class="about-item">
+                  <ion-icon
+                    name="checkmark-circle"
+                    aria-hidden="true"
+                  ></ion-icon>
 
-      <!-- Swiper -->
-      <div
-        class="swiper explore-feeds"
-        data-swiper-loop="true"
-        data-swiper-items="auto"
-        data-swiper-margin="30"
-      >
-        <div class="swiper-wrapper mb-60">
-          <div class="swiper-slide">
-            <!-- Single Product -->
-            <div class="single-product style--one">
-              <img src="assets/img/product/product4.png" alt="" />
-
-              <!-- Product Content -->
-              <div class="product-content">
-                <div class="product-top">
-                  <h5>Search Engine Optimization (SEO)</h5>
-                  <div class="d-flex justify-content-between">
-                  </div>
-                </div>
-                <div class="product-bottom">
-                  <p>Boost your company's online 
-                    visibility with our SEO strategies tailored for the 
-                    your industry.
+                  <p class="section-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
                   </p>
-                </div>
-              </div>
-              <!-- End Product Content -->
-            </div>
-            <!-- End Single Product -->
-          </div>
-          <div class="swiper-slide">
-            <!-- Single Product -->
-            <div class="single-product style--one">
-              <img src="assets/img/product/product5.png" alt="" />
+                </li>
 
-              <!-- Product Content -->
-              <div class="product-content">
-                <div class="product-top">
-                  <h5>Social Media Marketing</h5>
-                  <div class="d-flex justify-content-between">
-                  </div>
-                </div>
+                <li class="about-item">
+                  <ion-icon
+                    name="checkmark-circle"
+                    aria-hidden="true"
+                  ></ion-icon>
 
-                <div class="product-bottom">
-                  <p>
-                    Reach a wider audience and engage with potential 
-                    customers through effective social media marketing
-                     campaigns.
+                  <p class="section-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis natus animi repell
                   </p>
-                </div>
-              </div>
-              <!-- End Product Content -->
-            </div>
-            <!-- End Single Product -->
-          </div>
-          <div class="swiper-slide">
-            <!-- Single Product -->
-            <div class="single-product style--one">
-              <img src="assets/img/product/product6.png" alt="" />
+                </li>
 
-              <!-- Product Content -->
-              <div class="product-content">
-                <div class="product-top">
-                  <h5>Ad Buys</h5>
-                  <div class="d-flex justify-content-between">
-                  </div>
-                </div>
+                <li class="about-item">
+                  <ion-icon
+                    name="checkmark-circle"
+                    aria-hidden="true"
+                  ></ion-icon>
 
-                <div class="product-bottom">
-                  <p>
-                    Maximize your ad spend and achieve optimal results 
-                    by leveraging our expertise in targeted ad buying 
-                    for your company.
+                  <p class="section-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis natus animi repell
                   </p>
-                </div>
-              </div>
-              <!-- End Product Content -->
+                </li>
+              </ul>
+
+              <h3 class="h3">Our Mission</h3>
+
+              <p class="section-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perspiciatis natus animi repell
+              </p> -->
             </div>
-            <!-- End Single Product -->
           </div>
-          <div class="swiper-slide">
-            <!-- Single Product -->
-            <div class="single-product style--one">
-              <img src="assets/img/product/product7.png" alt="" />
+        </section>
 
-              <!-- Product Content -->
-              <div class="product-content">
-                <div class="product-top">
-                  <h5>Web Development</h5>
-                  <div class="d-flex justify-content-between">
-                  </div>
-                </div>
+        <!-- 
+        - #CTA
+      -->
 
-                <div class="product-bottom">
-                 <p>
-                  Get a stunning, responsive website that showcases
-                   your products and  services and converts 
-                   visitors into customers.
-                 </p>
-                </div>
-              </div>
-              <!-- End Product Content -->
-            </div>
-            <!-- End Single Product -->
+        <section
+          class="section cta"
+          aria-label="cta"
+          style="
+            background-image: url('./assets/images/Digital-Home\ \ \(1920\ ×\ 1080\ px\).png');
+          "
+        >
+          <div class="container">
+            <p class="cta-subtitle">So What is Next?</p>
+
+            <h2 class="h2 section-title">Are You Ready? Let's get to Work!</h2>
+
+            <a href="#contact" class="btn btn-secondary">Get Started</a>
           </div>
-          <div class="swiper-slide">
-            <!-- Single Product -->
-            <div class="single-product style--one">
-              <img src="assets/img/product/product8.png" alt="" />
+        </section>
 
-              <!-- Product Content -->
-              <div class="product-content">
-                <div class="product-top">
-                  <h5>Mobile Development</h5>
-                  <div class="d-flex justify-content-between">
-                  </div>
-                </div>
+        <!-- 
+        - #CONTACT
+      -->
 
-                <div class="product-bottom">
-                  <p>
-                    Reach your target audience on the go with our 
-                    custom mobile app development solutions.
-                  </p>
-                </div>
-              </div>
-              <!-- End Product Content -->
-            </div>
-            <!-- End Single Product -->
-          </div>
-            <div class="swiper-slide">
-            <!-- Single Product -->
-            <div class="single-product style--one">
-              <img src="assets/img/product/product8.png" alt="" />
+        <section class="section contact" id="contact" aria-label="contact">
+          <div class="container">
+            <h2 class="h2 section-title">Contact With Us</h2>
 
-              <!-- Product Content -->
-              <div class="product-content">
-                <div class="product-top">
-                  <h5>Lead Generation</h5>
-                  <div class="d-flex justify-content-between">
-                  </div>
-                </div>
+            <p class="section-text">
+              Ready to take your business to new heights? Reach out to us and
+              let's discuss how our expertise can help you achieve your goals.
+            </p>
 
-                <div class="product-bottom">
-                  <p>
-                    Attract high-quality leads for your
-                    business and convert them into paying customers 
-                    with our lead generation strategies.
-                  </p>
-                </div>
-              </div>
-              <!-- End Product Content -->
-            </div>
-            <!-- End Single Product -->
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-    <!-- End Explore Feeds -->
-
-    <!-- Support Center -->
-    <section id="contact" class="pb-120 mt-lg-120 pt-60 pt-lg-0">
-      <div class="container">
-        <div class="row gutter-60">
-          <div class="col-lg-4">
-            <!-- Support IMG -->
-            <div class="support-img">
-              <img src="assets/img/media/support-img.png" alt="" />
-            </div>
-            <!-- End Support IMG -->
-          </div>
-          <div class="col-lg-8">
-            <div class="d-flex justify-content-end mb-60">
-              <!-- Gradient box -->
-              <div class="quick-contact gradient-box">
-                <img
-                  src="assets/img/icons/phone.png"
-                  class="gradient-box-icon"
-                  alt=""
+            <form action="" class="contact-form">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  aria-label="name"
+                  placeholder="Your name*"
+                  required
+                  class="input-field"
                 />
-                <h3 class="text-white">Quick Contact Us:</h3>
-                <a href="tel:14692657200">+1 469 265 7200</a>
-              </div>
-              <!-- End Gradient box -->
-            </div>
 
-            <!-- Support Content -->
-            <div class="support-content">
-              <!-- Section Title -->
-              <div class="section-title text-white">
-                <h2>Contact Us</h2>
-                <p>
-                  Ready to take your business to new heights?
-                  Reach out to us and let's discuss how our expertise can help
-                  you achieve your goals.
-                </p>
+                <input
+                  type="email"
+                  name="email_address"
+                  aria-label="email"
+                  placeholder="Email address*"
+                  required
+                  class="input-field"
+                />
               </div>
-              <!-- End Section Title -->
 
-              <!-- Support Form -->
-              <form action="#" class="support-form row">
-                <div class="col-lg-6">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    placeholder="Your Name"
-                    required
-                  />
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="subject"
+                  aria-label="subject"
+                  placeholder="Subject"
+                  class="input-field"
+                />
+
+                <input
+                  type="number"
+                  name="phone"
+                  aria-label="phone"
+                  placeholder="Phone number"
+                  class="input-field"
+                />
+              </div>
+
+              <textarea
+                name="message"
+                aria-label="message"
+                placeholder="Your message...*"
+                required
+                class="input-field"
+              ></textarea>
+
+              <div class="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  name="terms_and_policy"
+                  id="terms"
+                  required
+                  class="checkbox"
+                />
+
+                <label for="terms" class="label">
+                  Accept
+                  <a href="#" class="label-link">Terms of Services</a> and
+                  <a href="#" class="label-link">Privacy Policy</a>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="contact-card">
+                  <div class="card-icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Mail Here</h3>
+
+                    <a href="jeffspicer@gmail.com" class="card-link"
+                      >jeffspicer@gmail.com</a
+                    >
+                  </div>
                 </div>
-                <div class="col-lg-6">
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                    required
-                  />
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-card">
+                  <div class="card-icon">
+                    <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Visit Here</h3>
+
+                    <address class="card-address">United States<br /></address>
+                  </div>
                 </div>
-                <div class="col-12">
-                  <textarea
-                    name="message"
-                    class="form-control"
-                    placeholder="Write Message Here"
-                    required
-                  ></textarea>
-                  <button type="submit" class="btn">
-                    <img src="assets/img/icons/mail.svg" alt="" class="svg" />
-                    Send Request
-                  </button>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="headset-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Call Here</h3>
+
+                    <a href="tel:+14692657200" class="card-link"
+                      >+146 926 57200</a
+                    >
+                  </div>
                 </div>
-              </form>
-              <!-- End Support Form -->
-            </div>
-            <!-- End Support Content -->
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Support Center -->
+        </section>
+      </article>
+    </main>
 
-    <!-- Footer -->
+    <!-- 
+    - #FOOTER
+  -->
+
     <footer class="footer">
-      <div class="footer-main">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-2 col-sm-6">
-              <!-- Widget Nav Menu -->
-              <!-- <div class="widget widget_nav_menu">
-                <h4 class="widget_title">My Account</h4>
-                <ul>
-                  <li><a href="profile.html">Profile</a></li>
-                  <li><a href="author.html">Author</a></li>
-                  <li><a href="collection.html">My Collections</a></li>
-                  <li><a href="author.html">Settings</a></li>
-                  <li><a href="activity.html">Activity</a></li>
-                </ul>
-              </div> -->
-              <!-- End Widget Nav Menu -->
-            </div>
-            <div class="col-xl-3 col-sm-6">
-              <!-- Widget Nav Menu -->
-              <!-- <div class="widget widget_nav_menu">
-                <h4 class="widget_title">Marketplace</h4>
-                <div class="footer-list-wrap">
-                  <ul>
-                    <li><a href="explore.html">All NFTs</a></li>
-                    <li><a href="explore.html">Trading Paint</a></li>
-                    <li><a href="explore.html">Art Painting</a></li>
-                    <li><a href="explore.html">Virtual Paints</a></li>
-                    <li><a href="explore.html">Collectibles</a></li>
-                  </ul>
-                  <ul>
-                    <li><a href="contact.html">Terms of Service</a></li>
-                    <li><a href="contact.html">Privacy Policy</a></li>
-                  </ul>
-                </div>
-              </div> -->
-              <!-- End Widget Nav Menu -->
-            </div>
-            <div class="col-xl-3 col-sm-6">
-              <!-- Widget Newsletter -->
-              <!-- <div class="widget widget_newsletter">
-                <h4 class="widget_title">Newsletter</h4>
-
-                <form
-                  action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&id=f4e0e93d1d"
-                  class="newslatter-form"
-                >
-                  <div class="theme-input-group">
-                    <input
-                      class="form-control"
-                      type="email"
-                      placeholder="Enter Your Email..."
-                    />
-                    <button type="submit" class="submit-btn btn">
-                      <img src="assets/img/icons/mail.svg" alt="" class="svg" />
-                      Signup Now
-                    </button>
-                  </div>
-                </form>
-              </div> -->
-              <!-- End Widget Newsletter -->
-            </div>
-            <div class="col-xl-4 col-sm-6">
-              <!-- Widget About -->
-              <div class="widget text-center text-white widget_about">
-                <img
-                  src="assets/img/DroneLogo-White.png"
-                  alt=""
-                  class="svg footer-logo"
-                />
-                <p>
-                 We specialize in comprehensive outsourcing solutions. Our expertise in SEO, social media marketing, web development, lead generation, and sales strategies drives success and sets our clients apart.
-                </p>
-
-                <!-- Socials -->
-                <div
-                  class="socials d-flex justify-content-center align-items-center"
-                >
-                  <a href="https://www.twitter.com/" target="_blank"
-                    ><img
-                      src="assets/img/icons/twitter-round.svg"
-                      alt=""
-                      class="svg"
-                  /></a>
-                  <a href="https://www.instagram.com/" target="_blank"
-                    ><img
-                      src="assets/img/icons/instagram-round.svg"
-                      alt=""
-                      class="svg"
-                  /></a>
-                  <a href="https://www.pinterest.com/" target="_blank"
-                    ><img
-                      src="assets/img/icons/pinterest.svg"
-                      alt=""
-                      class="svg"
-                  /></a>
-                  <a href="https://www.whatsapp.com/" target="_blank"
-                    ><img
-                      src="assets/img/icons/whatsapp.svg"
-                      alt=""
-                      class="svg"
-                  /></a>
-                </div>
-                <!-- End Socials -->
-              </div>
-              <!-- End Widget About -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <!-- CopyRight Content -->
-              <div class="copyright-content text-center text-white">
-                © <span class="currentYear">2023 </span>
-                <a href="" class="text-white">Spicer Global Solutions.</a>
-                All rights reserved.
-              </div>
-              <!-- End CopyRight Content -->
-            </div>
-          </div>
-        </div>
+      <div class="container">
+        <p class="copyright">
+          &copy; 2023 2022 All Rights Reserved by
+          <a href="#" class="copyright-link">Spicer Global Solutions</a>
+        </p>
       </div>
     </footer>
-    <!-- End Footer -->
 
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top">
-      <i class="fas fa-long-arrow-alt-up"></i>
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      aria-label="back to top"
+      data-back-top-btn
+      class="back-top-btn"
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
     </a>
-    <!-- End Back to Top Button -->
 
-    <!-- ======= jQuery Library ======= -->
-    <script src="assets/js/jquery.min.js"></script>
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
 
-    <!-- ======= Bootstrap Bundle JS ======= -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <!-- ======= Particles JS ======= -->
-    <script src="assets/plugins/particles/particles.min.js"></script>
-
-    <!-- ======= Menu JS ======= -->
-    <script src=" assets/js/menu.min.js"></script>
-
-    <!-- ======= Swiper JS ======= -->
-    <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
-
-    <!-- ======= Magnific Popup JS ======= -->
-    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- ======= Countdown JS ======= -->
-    <script src="assets/plugins/countdown/countdown.min.js"></script>
-
-    <!-- ======= Nice select JS ======= -->
-    <script src="assets/plugins/nice-select/jquery.nice-select.min.js"></script>
-
-    <!-- ======= Isotope JS ======= -->
-    <script src="assets/plugins/Isotope/isotope.pkgd.js"></script>
-
-    <!-- ======= Wayoints JS ======= -->
-    <script src="assets/plugins/counterup/waypoints.min.js"></script>
-
-    <!-- ======= CounterUp JS ======= -->
-    <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
-
-    <!-- ======= Main JS ======= -->
-    <script src="assets/js/main.js"></script>
-
-    <!-- ======= Custom JS ======= -->
-    <script src="assets/js/custom.js"></script>
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
